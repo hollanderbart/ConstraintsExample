@@ -19,6 +19,9 @@ class ViewController: UIViewController {
         let view = UIView()
         view.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         view.clipsToBounds = true
+        UIViewPropertyAnimator(duration: 1, curve: .linear, animations: {
+            view.layer.cornerRadius = 10
+        }).startAnimation()
         view.layer.cornerRadius = 5
         return view
     }()
@@ -27,7 +30,9 @@ class ViewController: UIViewController {
         let view = UIView()
         view.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         view.clipsToBounds = true
-        view.layer.cornerRadius = 5
+        UIViewPropertyAnimator(duration: 1, curve: .linear, animations: {
+            view.layer.cornerRadius = 10
+        }).startAnimation()
         return view
     }()
     
